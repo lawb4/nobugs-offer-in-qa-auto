@@ -6,4 +6,15 @@ package expressjava.practice1.homework;
 √(a² + b²)
 Вызовите метод с несколькими наборами чисел.*/
 public class Hypotenuse {
+
+    public static double findHypotenuse(double a, double b) {
+        return Math.sqrt(a * a + b * b);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(findHypotenuse(2, 3));
+        System.out.println(findHypotenuse(1, -2));
+        System.out.println(findHypotenuse(2, 0));
+        System.out.println(findHypotenuse(0, 3));
+    }
 }
