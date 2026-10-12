@@ -28,6 +28,6 @@ public class Laptop {
     }
 
     public void printInfo() {
-        System.out.printf("Laptop");
+        System.out.printf("Brand: %s, price: %.2f RUB", brand, price);
     }
 }

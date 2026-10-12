@@ -41,5 +41,9 @@ public class Main {
         product.setPrice(99.99);
         product.applyDiscount(30);
         product.printInfo();
+
+        Laptop laptop = new Laptop("Macbook M1 Air", 50000d);
+        laptop.setPrice(40000d);
+        laptop.printInfo();
     }
 }
