@@ -10,5 +10,9 @@ public class Main {
         Rectangle rectangle = new Rectangle(2d, 3d);
         rectangle.setWidth(4d);
         System.out.printf("Area: %.2f", rectangle.calculateArea());
+
+        Book book = new Book("12 Rules for Life", "Jordan Peterson");
+        book.setAuthor("Jordan Bernt Peterson");
+        book.printInfo();
     }
 }
