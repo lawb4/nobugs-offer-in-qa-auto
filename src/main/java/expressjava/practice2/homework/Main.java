@@ -14,5 +14,10 @@ public class Main {
         Book book = new Book("12 Rules for Life", "Jordan Peterson");
         book.setAuthor("Jordan Bernt Peterson");
         book.printInfo();
+
+        BankAccount bankAccount = new BankAccount("Yegor", 0d);
+        bankAccount.deposit(100d);
+        bankAccount.withdraw(10d);
+        bankAccount.printBalance();
     }
 }
