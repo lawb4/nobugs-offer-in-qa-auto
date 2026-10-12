@@ -23,5 +23,9 @@ public class Main {
         Point point = new Point(2.4d, 2.7d);
         point.setX(3.2d);
         point.print();
+
+        StudentGroup studentGroup = new StudentGroup("501 FE", 10);
+        studentGroup.setStudentCount(8);
+        studentGroup.printInfo();
     }
 }
