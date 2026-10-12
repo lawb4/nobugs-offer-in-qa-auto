@@ -19,5 +19,9 @@ public class Main {
         bankAccount.deposit(100d);
         bankAccount.withdraw(10d);
         bankAccount.printBalance();
+
+        Point point = new Point(2.4d, 2.7d);
+        point.setX(3.2d);
+        point.print();
     }
 }
