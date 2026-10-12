@@ -28,11 +28,7 @@ public class BankAccount {
     }
 
     public void withdraw(double amount) {
-        if (balance >= amount) {
             this.balance -= amount;
-        } else {
-            System.out.println("There is not enough money available in your bank account!");
-        }
     }
 
     public void printBalance() {
