@@ -27,5 +27,9 @@ public class Main {
         StudentGroup studentGroup = new StudentGroup("501 FE", 10);
         studentGroup.setStudentCount(8);
         studentGroup.printInfo();
+
+        Circle circle = new Circle(2.5d);
+        circle.setRadius(3.2d);
+        System.out.printf("Area: %.2f, circumference: %.2f", circle.calculateArea(), circle.calculateCircumference());
     }
 }
