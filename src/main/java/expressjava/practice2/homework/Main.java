@@ -35,5 +35,10 @@ public class Main {
         Teacher teacher = new Teacher("Galina Ivanovna", "Math");
         teacher.setSubject("English");
         teacher.printInfo();
+
+        Product product = new Product("Course", 109d);
+        product.setPrice(100d);
+        product.applyDiscount(75);
+        System.out.printf("Price: %.2f", product.getPrice());
     }
 }
