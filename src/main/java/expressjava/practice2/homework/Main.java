@@ -31,5 +31,9 @@ public class Main {
         Circle circle = new Circle(2.5d);
         circle.setRadius(3.2d);
         System.out.printf("Area: %.2f, circumference: %.2f", circle.calculateArea(), circle.calculateCircumference());
+
+        Teacher teacher = new Teacher("Galina Ivanovna", "Math");
+        teacher.setSubject("English");
+        teacher.printInfo();
     }
 }
