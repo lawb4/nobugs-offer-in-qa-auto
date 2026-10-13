@@ -40,5 +40,9 @@ public class Main {
         product.setPrice(100d);
         product.applyDiscount(75);
         System.out.printf("Price: %.2f", product.getPrice());
+
+        Laptop laptop = new Laptop("Macbook Pro M1", 50000d);
+        laptop.setPrice(70000d);
+        laptop.printInfo();
     }
 }
