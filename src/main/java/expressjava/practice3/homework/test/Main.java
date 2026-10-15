@@ -29,5 +29,11 @@ public class Main {
         game2.addPlayer();
         game1.printGameStatus();
         game2.printGameStatus();
+
+        Person person1 = new Person("Ivan", "Ivanov", "123-123");
+        Person person2 = new Person("Hanna", "Ivanova", "123-124");
+        person1.setFirstName("Juan");
+        person1.printPersonInfo();
+        person2.printPersonInfo();
     }
 }
