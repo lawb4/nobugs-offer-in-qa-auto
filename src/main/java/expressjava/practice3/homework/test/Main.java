@@ -10,5 +10,8 @@ public class Main {
         System.out.printf("Employee: %s, Company: %s\n", employee1.getEmployeeName(), Company.companyName);
         System.out.printf("Employee: %s, Company: %s\n", employee2.getEmployeeName(), Company.companyName);
         //employee1.employeeID = 2; // compile error
+
+        System.out.printf("Circle area: %f\n", MathConstants.calculateCircleArea(2));
+        System.out.printf("Circle circumference: %f", MathConstants.calculateCircumference(3));
     }
 }
