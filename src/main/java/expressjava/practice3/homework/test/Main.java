@@ -21,5 +21,13 @@ public class Main {
         student1.printStudentInfo();
         student2.printStudentInfo();
         student3.printStudentInfo();
+
+        GameSettings game1 = new GameSettings("Dota 2", 9);
+        GameSettings game2 = new GameSettings("League of Legends", 8);
+        GameSettings.setMaxPlayers(12);
+        game1.addPlayer();
+        game2.addPlayer();
+        game1.printGameStatus();
+        game2.printGameStatus();
     }
 }
