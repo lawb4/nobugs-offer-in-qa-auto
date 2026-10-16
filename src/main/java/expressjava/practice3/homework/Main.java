@@ -10,5 +10,17 @@ public class Main {
 
         System.out.println(MathConstants.calculateCircleArea(2d));
         System.out.println(MathConstants.calculateCircumference(3d));
+
+        University student1 = new University(1, "Ivan");
+        student1.printStudentInfo();
+
+        University student2 = new University(2, "Anna");
+        University.universityName = "Harvard";
+        student2.printStudentInfo();
+
+        University student3 = new University(3, "Max");
+        University.changeUniversityName("Standford");
+        student3.printStudentInfo();
+
     }
 }
