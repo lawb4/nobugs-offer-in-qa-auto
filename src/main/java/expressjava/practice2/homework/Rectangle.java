@@ -2,27 +2,27 @@ package expressjava.practice2.homework;
 
 public class Rectangle {
 
-    private double widht;
+    private double width;
     private double height;
 
-    public Rectangle(double widht, double height) {
-        this.widht = widht;
+    public Rectangle(double width, double height) {
+        this.width = width;
         this.height = height;
     }
 
-    public double getWidht() {
-        return widht;
+    public double getWidth() {
+        return width;
     }
 
     public double getHeight() {
         return height;
     }
 
-    public void setWidth(double widht) {
-        this.widht = widht;
+    public void setWidth(double width) {
+        this.width = width;
     }
 
     public double calculateArea() {
-        return widht * height;
+        return width * height;
     }
 }
