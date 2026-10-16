@@ -7,5 +7,8 @@ public class Main {
         Company.companyName = "Google";
         Company.printCompanyName();
         //employee2.employeeID = 3; // compilation error
+
+        System.out.println(MathConstants.calculateCircleArea(2d));
+        System.out.println(MathConstants.calculateCircumference(3d));
     }
 }
