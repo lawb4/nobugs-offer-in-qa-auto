@@ -22,5 +22,12 @@ public class Main {
         University.changeUniversityName("Standford");
         student3.printStudentInfo();
 
+        GameSettings game1 = new GameSettings("Dota 2", 8);
+        GameSettings game2 = new GameSettings("League of Legends", 6);
+        GameSettings.setMaxPlayers(10);
+        game1.addPlayer();
+        game2.addPlayer();
+        game1.printGameStatus();
+        game2.printGameStatus();
     }
 }
