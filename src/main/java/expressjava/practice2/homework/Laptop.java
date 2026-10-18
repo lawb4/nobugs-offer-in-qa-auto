@@ -27,7 +27,7 @@ public class Laptop {
     }
 
     public void printInfo() {
-        System.out.printf("Brand: %s, price: %.2f", brand, price);
+        System.out.printf("Brand: %s, price: %.2f\n", brand, price);
     }
 
 }

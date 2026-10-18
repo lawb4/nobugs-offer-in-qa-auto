@@ -27,6 +27,6 @@ public class Teacher {
     }
 
     public void printInfo() {
-        System.out.printf("Name: %s, subject: %s", name, subject);
+        System.out.printf("Name: %s, subject: %s\n", name, subject);
     }
 }
