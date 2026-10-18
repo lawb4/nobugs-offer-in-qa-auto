@@ -31,7 +31,7 @@ public class Product {
     }
 
     public void printInfo() {
-        System.out.printf("Product: %s, price: %.2f", name, price);
+        System.out.printf("Product: %s, price: %.2f\n", name, price);
     }
 
 }

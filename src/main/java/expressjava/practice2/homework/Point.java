@@ -23,6 +23,6 @@ public class Point {
     }
 
     public void print() {
-        System.out.printf("x: %.2f, y: %.2f", x, y);
+        System.out.printf("x: %.2f, y: %.2f\n", x, y);
     }
 }

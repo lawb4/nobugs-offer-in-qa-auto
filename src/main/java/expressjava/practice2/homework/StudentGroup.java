@@ -27,6 +27,6 @@ public class StudentGroup {
     }
 
     public void printInfo() {
-        System.out.printf("Group name: %s, student count: %d", groupName, studentCount);
+        System.out.printf("Group name: %s, student count: %d\n", groupName, studentCount);
     }
 }

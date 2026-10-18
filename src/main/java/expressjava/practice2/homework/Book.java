@@ -27,6 +27,6 @@ public class Book {
     }
 
     public void printInfo() {
-        System.out.printf("Title: %s, author: %s", title, author);
+        System.out.printf("Title: %s, author: %s\n", title, author);
     }
 }

@@ -23,11 +23,13 @@ public class BankAccount {
     }
 
     public void deposit(double amount) {
-        balance += amount;
+        if (amount > 0) {
+            balance += amount;
+        }
     }
 
     public void withdraw(double amount) {
-        if (balance >= amount) {
+        if (balance >= amount && amount > 0) {
             balance -= amount;
         } else {
             System.out.println("There is not enough money in your bank account");
@@ -35,6 +37,6 @@ public class BankAccount {
     }
 
     public void printBalance() {
-        System.out.printf("Balance: %.2f", balance);
+        System.out.printf("Balance: %.2f\n", balance);
     }
 }
