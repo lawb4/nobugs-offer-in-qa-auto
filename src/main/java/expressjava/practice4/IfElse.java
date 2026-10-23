@@ -1,4 +1,4 @@
-package expressjava.practice4.homework;
+package expressjava.practice4;
 
 import java.util.Scanner;
 
