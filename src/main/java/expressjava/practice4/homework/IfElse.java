@@ -10,6 +10,7 @@ public class IfElse {
         printGradeAsText();
         System.out.println(checkForParity());
         System.out.println(getDiscountBasedOnAge());
+        printTestResultGradeAsText();
     }
 
     public static String determineNumberSign() {
@@ -89,5 +90,23 @@ public class IfElse {
             discountPercentage = 0;
         }
         return discountPercentage;
+    }
+
+    public static void printTestResultGradeAsText() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter test result grade (0-100): ");
+        int testResultGrade = sc.nextInt();
+
+        String result = "Введена некорректная оценка";
+        if (testResultGrade >= 90 && testResultGrade <= 100) {
+            result = "Отлично";
+        } else if (testResultGrade >= 75 && testResultGrade <= 89) {
+            result = "Хорошо";
+        } else if (testResultGrade >= 60 && testResultGrade <= 74) {
+            result = "Удовлетворительно";
+        } else if (testResultGrade >= 0 && testResultGrade < 60) {
+            result = "Неудовлетворительно";
+        }
+        System.out.println(result);
     }
 }
