@@ -1,0 +1,39 @@
+package expressjava.practice3.homework;
+
+public class Main {
+    public static void main(String[] args) {
+        Company employee1 = new Company(1, "Ivan");
+        Company employee2 = new Company(2, "Anna");
+        Company.companyName = "Google";
+        Company.printCompanyName();
+        //employee2.employeeID = 3; // compilation error
+
+        System.out.println(MathConstants.calculateCircleArea(2d));
+        System.out.println(MathConstants.calculateCircumference(3d));
+
+        University student1 = new University(1, "Ivan");
+        student1.printStudentInfo();
+
+        University student2 = new University(2, "Anna");
+        University.universityName = "Harvard";
+        student2.printStudentInfo();
+
+        University student3 = new University(3, "Max");
+        University.changeUniversityName("Standford");
+        student3.printStudentInfo();
+
+        GameSettings game1 = new GameSettings("Dota 2", 8);
+        GameSettings game2 = new GameSettings("League of Legends", 6);
+        GameSettings.setMaxPlayers(10);
+        game1.addPlayer();
+        game2.addPlayer();
+        game1.printGameStatus();
+        game2.printGameStatus();
+
+        Person person1 = new Person("Ivan", "Ivanovich", "123");
+        Person person2 = new Person("Anna", "Ivanovna", "1234");
+        person1.setFirstName("Juan");
+        person1.printPersonInfo();
+        person2.printPersonInfo();
+    }
+}
