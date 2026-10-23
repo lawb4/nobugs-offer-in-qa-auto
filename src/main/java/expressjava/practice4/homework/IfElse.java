@@ -8,6 +8,7 @@ public class IfElse {
         System.out.println(determineNumberSign());
         printGreaterNumberOutOfTwo();
         printGradeAsText();
+        System.out.println(checkForParity());
     }
 
     public static String determineNumberSign() {
@@ -61,5 +62,16 @@ public class IfElse {
             result = "Введено неверное значение!";
         }
         System.out.println(result);
+    }
+
+    public static String checkForParity() {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        String result;
+        if (num % 2 == 0) {
+            result = "Чётное";
+        } else result = "Нечётное";
+        return result;
     }
 }
