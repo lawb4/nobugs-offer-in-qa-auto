@@ -11,6 +11,7 @@ public class For {
         printNumbersDivisiblebyThree();
         System.out.println(getSumOfNumFromOneToN());
         printTimesTable();
+        System.out.println(isPrime());
     }
 
     public static void printNumbersDivisiblebyThree() {
@@ -39,5 +40,25 @@ public class For {
         for (int i = 1; i <= 10; i++) {
             System.out.printf("%d x %d = %d\n", n, i, n * i);
         }
+    }
+
+    public static boolean isPrime() {
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        boolean isPrime = true;
+
+        if (n < 2) {
+            isPrime = false;
+        }
+
+        for (int i = 2; i <= n - 1; i++) {
+
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        return isPrime;
     }
 }
