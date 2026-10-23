@@ -8,6 +8,7 @@ public class Switch {
 
     public static void main(String[] args) {
         printDayOfWeekByItsNumber();
+        System.out.println(getMovieTicketPrice());
     }
 
     public static void printDayOfWeekByItsNumber() {
@@ -26,5 +27,18 @@ public class Switch {
             default -> System.out.println("Введено некорректное значение");
         }
         System.out.println(dayOfWeek);
+    }
+
+    public static double getMovieTicketPrice() {
+        System.out.print("Enter day of week (1-7): ");
+        int dayOfWeek = sc.nextInt();
+
+        double price = 0d;
+        switch (dayOfWeek) {
+            case 1, 2, 3, 4, 5 -> price = 300d;
+            case 6, 7 -> price = 450d;
+            default -> System.out.println("Invalid value");
+        }
+        return price;
     }
 }
