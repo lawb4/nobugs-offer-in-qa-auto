@@ -10,6 +10,7 @@ public class For {
     public static void main(String[] args) {
         printNumbersDivisiblebyThree();
         System.out.println(getSumOfNumFromOneToN());
+        printTimesTable();
     }
 
     public static void printNumbersDivisiblebyThree() {
@@ -29,5 +30,14 @@ public class For {
             sum += i;
         }
         return sum;
+    }
+
+    public static void printTimesTable() {
+        System.out.print("Enter number for which you want times table to be printed: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%d x %d = %d\n", n, i, n * i);
+        }
     }
 }
