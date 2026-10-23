@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class IfElse {
 
     public static void main(String[] args) {
-        determineNumberSign();
+        System.out.println(determineNumberSign());
     }
 
-    public static void determineNumberSign() {
+    public static String determineNumberSign() {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         String result;
@@ -20,6 +20,6 @@ public class IfElse {
         } else {
             result = "Число равно нулю";
         }
-        System.out.println(result);
+        return result;
     }
 }
