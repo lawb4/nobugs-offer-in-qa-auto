@@ -8,6 +8,7 @@ public class BreakContinue {
 
     public static void main(String[] args) {
         printSumUntilFirstNegativeNumber();
+        printNumsExceptDivisibleByThree();
     }
 
     public static void printSumUntilFirstNegativeNumber() {
@@ -23,5 +24,14 @@ public class BreakContinue {
             sum += n;
         }
         System.out.println(sum);
+    }
+
+    public static void printNumsExceptDivisibleByThree() {
+        for (int i = 1; i <= 20; i++) {
+            if (i % 3 == 0) {
+                continue;
+            }
+            System.out.println(i);
+        }
     }
 }
