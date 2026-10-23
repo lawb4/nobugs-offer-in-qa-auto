@@ -10,6 +10,7 @@ public class Switch {
         printDayOfWeekByItsNumber();
         System.out.println(getMovieTicketPrice());
         System.out.println(convertGradeFromNumberToChar());
+        printMessageBasedOnCommand();
     }
 
     public static void printDayOfWeekByItsNumber() {
@@ -58,4 +59,20 @@ public class Switch {
         }
         return gradeChar;
     }
+
+    public static void printMessageBasedOnCommand() {
+        System.out.print("Enter command (start, stop, restart, status): ");
+        String command = sc.nextLine();
+
+        String result;
+        switch (command) {
+            case "start" -> result = "Система запущена";
+            case "stop" -> result = "Система остановлена";
+            case "restart" -> result = "Система перезагружена";
+            case "status" -> result = "Статус системы: ...";
+            default -> result = "Введена неверная команда";
+        }
+        System.out.println(result);
+    }
+
 }
