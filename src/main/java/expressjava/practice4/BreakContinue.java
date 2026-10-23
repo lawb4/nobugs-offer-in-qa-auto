@@ -10,6 +10,7 @@ public class BreakContinue {
         printSumUntilFirstNegativeNumber();
         printNumsExceptDivisibleByThree();
         printOnlyPositives();
+        printUntilStop();
     }
 
     public static void printSumUntilFirstNegativeNumber() {
@@ -51,6 +52,18 @@ public class BreakContinue {
             }
 
             System.out.printf("%d \n", num);
+        }
+    }
+
+    public static void printUntilStop() {
+
+        while (true) {
+            System.out.print("Enter string: ");
+            String s = sc.nextLine();
+
+            if (s.equals("stop")) {
+                break;
+            }
         }
     }
 }
