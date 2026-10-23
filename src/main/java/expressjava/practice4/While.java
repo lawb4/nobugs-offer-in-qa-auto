@@ -9,6 +9,7 @@ public class While {
     public static void main(String[] args) {
         printFactorial();
         printEvenNumbersTillTarget();
+        printReverseCountFromPositiveNumber();
     }
 
     public static void printFactorial() {
@@ -34,6 +35,16 @@ public class While {
                 System.out.printf("%d ", i);
             }
             i++;
+        }
+    }
+
+    public static void printReverseCountFromPositiveNumber() {
+        System.out.print("Enter positive number: ");
+        int n = sc.nextInt();
+
+        while (n > 0) {
+            System.out.printf("%d ", n);
+            n--;
         }
     }
 }
