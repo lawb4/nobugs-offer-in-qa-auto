@@ -12,6 +12,7 @@ public class For {
         System.out.println(getSumOfNumFromOneToN());
         printTimesTable();
         System.out.println(isPrime());
+        printNumbersFromOneToTen();
     }
 
     public static void printNumbersDivisiblebyThree() {
@@ -60,5 +61,11 @@ public class For {
             }
         }
         return isPrime;
+    }
+
+    public static void printNumbersFromOneToTen() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%d ", i);
+        }
     }
 }
