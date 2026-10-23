@@ -11,6 +11,8 @@ public class Switch {
         System.out.println(getMovieTicketPrice());
         System.out.println(convertGradeFromNumberToChar());
         printMessageBasedOnCommand();
+        System.out.println(calculate());
+
     }
 
     public static void printDayOfWeekByItsNumber() {
@@ -75,4 +77,27 @@ public class Switch {
         System.out.println(result);
     }
 
+    public static double calculate() {
+        System.out.print("Enter first number: ");
+        double first = sc.nextDouble();
+        System.out.print("Enter second number: ");
+        double second = sc.nextDouble();
+        System.out.print("Enter operator (+, -, *, /): ");
+        String operator = sc.next();
+
+        double result = 0d;
+        switch (operator) {
+            case "+" -> result = first + second;
+            case "-" -> result = first - second;
+            case "*" -> result = first * second;
+            case "/" -> {
+                if (second != 0) {
+                    result = first / second;
+                } else {
+                    System.out.println("Division by zero");
+                }
+            }
+        }
+        return result;
+    }
 }
