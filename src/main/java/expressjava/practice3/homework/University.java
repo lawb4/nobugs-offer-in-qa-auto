@@ -5,20 +5,20 @@ public class University {
     final int studentID;
     String studentName;
 
-    University(int studentID, String studentName) {
+    public University(int studentID, String studentName) {
         this.studentID = studentID;
         this.studentName = studentName;
     }
 
-    static void changeUniversityName(String newName) {
+    public static void changeUniversityName(String newName) {
         universityName = newName;
     }
 
-    String getStudentName() {
+    public String getStudentName() {
         return studentName;
     }
 
-    void printStudentInfo() {
+    public void printStudentInfo() {
         System.out.printf("Student name: %s, ID: %d, university: %s\n", studentName, studentID, universityName);
     }
 }

@@ -10,7 +10,7 @@ public class Company {
         this.employeeName = employeeName;
     }
 
-    static void printCompanyName() {
+    public static void printCompanyName() {
         System.out.println(companyName);
     }
 

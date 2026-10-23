@@ -5,7 +5,7 @@ public class Person {
     private String lastName;
     private final String ssn;
 
-    Person(String firstName, String lastName, String ssn) {
+    public Person(String firstName, String lastName, String ssn) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.ssn = ssn;
@@ -31,7 +31,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    void printPersonInfo() {
+    public void printPersonInfo() {
         System.out.printf("Имя: %s, Фамилия: %s, SSN: %s\n", firstName, lastName, ssn);
     }
 
