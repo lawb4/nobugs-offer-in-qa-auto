@@ -15,7 +15,7 @@ public class BreakContinue {
 
     public static void printSumUntilFirstNegativeNumber() {
 
-        int n = 0;
+        int n;
         int sum = 0;
         while (true) {
             System.out.print("Enter num: ");
