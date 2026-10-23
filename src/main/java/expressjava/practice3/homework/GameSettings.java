@@ -5,12 +5,12 @@ public class GameSettings {
     final String gameName;
     int currentPlayers;
 
-    GameSettings(String gameName, int currentPlayers) {
+    public GameSettings(String gameName, int currentPlayers) {
         this.gameName = gameName;
         this.currentPlayers = currentPlayers;
     }
 
-    static void setMaxPlayers(int newMaxPlayers) {
+    public static void setMaxPlayers(int newMaxPlayers) {
         maxPlayers = newMaxPlayers;
     }
 
