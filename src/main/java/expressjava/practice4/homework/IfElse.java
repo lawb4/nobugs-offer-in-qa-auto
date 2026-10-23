@@ -7,6 +7,7 @@ public class IfElse {
     public static void main(String[] args) {
         System.out.println(determineNumberSign());
         printGreaterNumberOutOfTwo();
+        printGradeAsText();
     }
 
     public static String determineNumberSign() {
@@ -39,5 +40,26 @@ public class IfElse {
             result = second;
         }
         System.out.println("The greater number is " + result);
+    }
+
+    public static void printGradeAsText() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введите оценку (1-5): ");
+        int grade = sc.nextInt();
+
+        String result;
+        if (grade == 5) {
+            result = "Отлично";
+        } else if (grade == 4) {
+            result = "Хорошо";
+        } else if (grade == 3) {
+            result = "Удовлетворительно";
+        } else if (grade == 2 || grade == 1) {
+            result = "Неудовлетворительно";
+        } else {
+            result = "Введено неверное значение!";
+        }
+        System.out.println(result);
     }
 }
