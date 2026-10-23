@@ -9,6 +9,7 @@ public class IfElse {
         printGreaterNumberOutOfTwo();
         printGradeAsText();
         System.out.println(checkForParity());
+        System.out.println(getDiscountBasedOnAge());
     }
 
     public static String determineNumberSign() {
@@ -73,5 +74,20 @@ public class IfElse {
             result = "Чётное";
         } else result = "Нечётное";
         return result;
+    }
+
+    public static int getDiscountBasedOnAge() {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+
+        int discountPercentage;
+        if (age <= 18 && age > 0) {
+            discountPercentage = 25;
+        } else if (age >= 65) {
+            discountPercentage = 30;
+        } else {
+            discountPercentage = 0;
+        }
+        return discountPercentage;
     }
 }
