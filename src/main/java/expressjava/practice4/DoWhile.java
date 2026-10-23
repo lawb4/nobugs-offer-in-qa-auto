@@ -10,6 +10,7 @@ public class DoWhile {
         promptForNumberUntilPositive();
         promptForPassword();
         printNumbersFromOneToTen();
+        promptForExitCommand();
     }
 
     public static void promptForNumberUntilPositive() {
@@ -37,5 +38,13 @@ public class DoWhile {
             System.out.printf("%d ", i);
             i++;
         } while (i <= 10);
+    }
+
+    public static void promptForExitCommand() {
+        String cmd;
+        do {
+            System.out.print("Enter command: ");
+            cmd = sc.nextLine();
+        } while (!cmd.equals("exit"));
     }
 }
