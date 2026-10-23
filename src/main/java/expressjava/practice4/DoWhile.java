@@ -11,6 +11,7 @@ public class DoWhile {
         promptForPassword();
         printNumbersFromOneToTen();
         promptForExitCommand();
+        System.out.println(countDigits());
     }
 
     public static void promptForNumberUntilPositive() {
@@ -46,5 +47,18 @@ public class DoWhile {
             System.out.print("Enter command: ");
             cmd = sc.nextLine();
         } while (!cmd.equals("exit"));
+    }
+
+    public static int countDigits() {
+
+        System.out.print("Enter number: ");
+        int num = sc.nextInt();
+
+        int count = 0;
+        do {
+            num /= 10;
+            count++;
+        } while (num != 0);
+        return count;
     }
 }
