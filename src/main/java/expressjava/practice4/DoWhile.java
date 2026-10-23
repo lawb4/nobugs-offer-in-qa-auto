@@ -9,6 +9,7 @@ public class DoWhile {
     public static void main(String[] args) {
         promptForNumberUntilPositive();
         promptForPassword();
+        printNumbersFromOneToTen();
     }
 
     public static void promptForNumberUntilPositive() {
@@ -28,5 +29,13 @@ public class DoWhile {
             pass = sc.nextLine();
         } while (!pass.equals("pa$$123"));
         System.out.println("Password is correct");
+    }
+
+    public static void printNumbersFromOneToTen() {
+        int i = 1;
+        do {
+            System.out.printf("%d ", i);
+            i++;
+        } while (i <= 10);
     }
 }
