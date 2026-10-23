@@ -9,6 +9,7 @@ public class Switch {
     public static void main(String[] args) {
         printDayOfWeekByItsNumber();
         System.out.println(getMovieTicketPrice());
+        System.out.println(convertGradeFromNumberToChar());
     }
 
     public static void printDayOfWeekByItsNumber() {
@@ -40,5 +41,21 @@ public class Switch {
             default -> System.out.println("Invalid value");
         }
         return price;
+    }
+
+    public static char convertGradeFromNumberToChar() {
+        System.out.print("Enter grade (0-100): ");
+        int gradeNum = sc.nextInt();
+
+        char gradeChar = 0;
+        switch (gradeNum / 10) {
+            case 9, 10 -> gradeChar = 'A';
+            case 8 -> gradeChar = 'B';
+            case 7 -> gradeChar = 'C';
+            case 6 -> gradeChar = 'D';
+            case 0, 1, 2, 3, 4, 5 -> gradeChar = 'F';
+            default -> System.out.println("Incorrect grade value");
+        }
+        return gradeChar;
     }
 }
