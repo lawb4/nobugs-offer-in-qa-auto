@@ -16,7 +16,7 @@ public class Switch {
 
     public static void printDayOfWeekByItsNumber() {
         System.out.print("Введите день недели (1-7): ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         String result;
         switch (n) {
@@ -34,7 +34,7 @@ public class Switch {
 
     public static int getTicketPriceByDayOfWeek() {
         System.out.print("На какой день недели посчитать стоимость билета? ");
-        int dayOfWeek = sc.nextInt();
+        int dayOfWeek = Integer.parseInt(sc.nextLine());
 
         int price;
         switch (dayOfWeek) {
@@ -47,7 +47,11 @@ public class Switch {
 
     public static char convertGradeToLetter() {
         System.out.print("Enter grade (0-100): ");
-        int grade = sc.nextInt();
+        int grade = Integer.parseInt(sc.nextLine());
+
+        if (grade < 0 || grade > 100) {
+            return '\0'; // indicator of invalid grade
+        }
 
         char gradeLetter;
         switch (grade / 10) {
@@ -55,8 +59,7 @@ public class Switch {
             case 8 -> gradeLetter = 'B';
             case 7 -> gradeLetter = 'C';
             case 6 -> gradeLetter = 'D';
-            case 5, 4, 3, 2, 1, 0 -> gradeLetter = 'F';
-            default -> gradeLetter = 0;
+            default -> gradeLetter = 'F';
         }
         return gradeLetter;
     }
@@ -78,11 +81,11 @@ public class Switch {
 
     public static void printCalculationResult() {
         System.out.print("Enter first number: ");
-        int first = sc.nextInt();
+        double first = Double.parseDouble(sc.nextLine());
         System.out.print("Enter second number: ");
-        int second = sc.nextInt();
+        double second = Double.parseDouble(sc.nextLine());
         System.out.print("Enter operator (+, -, *, /): ");
-        String operator = sc.next();
+        String operator = sc.nextLine();
 
         switch (operator) {
             case "+" -> System.out.println(first + second);

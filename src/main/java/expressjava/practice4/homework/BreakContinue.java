@@ -9,6 +9,7 @@ public class BreakContinue {
     public static void main(String[] args) {
         System.out.println(getSumOfNumbersTillFirstNegativeNumber());
         printNumbersExceptDivisibleByThree();
+        System.out.println();
         printOnlyPositiveNumbers();
         promptForStrings();
     }
@@ -18,7 +19,7 @@ public class BreakContinue {
         int sum = 0;
         while (true) {
             System.out.print("Enter num: ");
-            int n = sc.nextInt();
+            int n = Integer.parseInt(sc.nextLine());
 
             if (n < 0) {
                 break;
@@ -42,7 +43,7 @@ public class BreakContinue {
 
         while (true) {
             System.out.print("Enter number: ");
-            int n = sc.nextInt();
+            int n = Integer.parseInt(sc.nextLine());
 
             if (n == 0) {
                 break;
@@ -59,7 +60,7 @@ public class BreakContinue {
     public static void promptForStrings() {
 
         while (true) {
-            System.out.println("Enter string: ");
+            System.out.print("Enter string: ");
             String s = sc.nextLine();
 
             if (s.equals("stop")) {
