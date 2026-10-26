@@ -17,7 +17,7 @@ public class IfElse {
 
     public static void printNumberSign() {
         System.out.print("Enter number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         String result;
         if (n > 0) {
@@ -32,9 +32,9 @@ public class IfElse {
 
     public static void printMaxNumbersOfTwoNumbers() {
         System.out.print("Enter first number: ");
-        int first = sc.nextInt();
+        int first = Integer.parseInt(sc.nextLine());
         System.out.print("Enter second number: ");
-        int second = sc.nextInt();
+        int second = Integer.parseInt(sc.nextLine());
 
         int result;
         if (first > second) {
@@ -47,7 +47,7 @@ public class IfElse {
 
     public static void printGrade() {
         System.out.print("Enter grade (1-5): ");
-        int grade = sc.nextInt();
+        int grade = Integer.parseInt(sc.nextLine());
 
         String result;
         if (grade == 5) {
@@ -66,7 +66,7 @@ public class IfElse {
 
     public static boolean isEven() {
         System.out.print("Enter number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         boolean isEven;
         if (n % 2 == 0) {
@@ -79,7 +79,7 @@ public class IfElse {
 
     public static int getDiscountByAge() {
         System.out.print("Enter age: ");
-        int age = sc.nextInt();
+        int age = Integer.parseInt(sc.nextLine());
 
         int discount = 0;
         if (age < 18 && age > 0) {
@@ -92,7 +92,7 @@ public class IfElse {
 
     public static void printTestResult() {
         System.out.print("Enter test grade (0-100): ");
-        int grade = sc.nextInt();
+        int grade = Integer.parseInt(sc.nextLine());
 
         String result;
         if (grade >= 90 && grade <= 100) {

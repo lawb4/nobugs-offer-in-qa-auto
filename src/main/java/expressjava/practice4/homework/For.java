@@ -8,6 +8,7 @@ public class For {
 
     public static void main(String[] args) {
         printNumbersFromOneToHundredExceptDivisibleByThree();
+        System.out.println();
         System.out.println(getSumOfNumbersFromOneToN());
         printTimesTable();
         System.out.println(isPrime());
@@ -25,7 +26,7 @@ public class For {
 
     public static int getSumOfNumbersFromOneToN() {
         System.out.print("Enter number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -36,7 +37,7 @@ public class For {
 
     public static void printTimesTable() {
         System.out.print("Enter number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         for (int i = 1; i <= 10; i++) {
             System.out.printf("%d * %d = %d\n", n, i, n * i);
@@ -45,7 +46,7 @@ public class For {
 
     public static boolean isPrime() {
         System.out.print("Enter num: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         boolean isPrime = true;
         for (int i = 2; i <= n - 1; i++) {

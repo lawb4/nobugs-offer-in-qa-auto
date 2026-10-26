@@ -10,6 +10,7 @@ public class DoWhile {
         promptForPositiveNumber();
         verifyPassword();
         printNumbersFromOneToTen();
+        System.out.println();
         promptForExitCommand();
         System.out.println(getDigitsInNumber());
     }
@@ -19,7 +20,7 @@ public class DoWhile {
         int number;
         do {
             System.out.print("Enter number: ");
-            number = sc.nextInt();
+            number = Integer.parseInt(sc.nextLine());
         } while (number <= 0);
     }
 
@@ -53,7 +54,7 @@ public class DoWhile {
     public static int getDigitsInNumber() {
 
         System.out.print("Enter number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         int count = 0;
 

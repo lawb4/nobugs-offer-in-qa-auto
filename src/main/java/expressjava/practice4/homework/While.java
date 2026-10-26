@@ -9,12 +9,17 @@ public class While {
     public static void main(String[] args) {
         System.out.println(getFactorial());
         printEvenNumbersTillBoundary();
+        System.out.println();
         printReverseCount();
     }
 
     public static int getFactorial() {
         System.out.print("Enter num: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
+
+        if (n < 0) {
+            return -1; // indicator that factorial is not defined for negative numbers
+        }
 
         int result = 1;
         int i = 1;
@@ -27,7 +32,7 @@ public class While {
 
     public static void printEvenNumbersTillBoundary() {
         System.out.print("Enter boundary number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         int i = 1;
         while (i < n) {
@@ -40,7 +45,7 @@ public class While {
 
     public static void printReverseCount() {
         System.out.print("Enter positive number: ");
-        int number = sc.nextInt();
+        int number = Integer.parseInt(sc.nextLine());
 
         while (number >= 1) {
             System.out.printf("%d ", number);
