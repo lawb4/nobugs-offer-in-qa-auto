@@ -26,6 +26,8 @@ public class Main {
         hall1.addRow(row2);
 
         Movie movie1 = new Movie("Movie Title");
+        cinema.addMovie(movie1);
+
         Session session1 = new Session(hall1, movie1, "Today");
 
         System.out.println(session1.isSeatAvailable(row1seat2)); // true
@@ -34,5 +36,11 @@ public class Main {
         System.out.println(customer1.getBookings().size()); // 1
         System.out.println(session1.isSeatAvailable(new Seat(2, 2))); // true
         System.out.println(session1.isSeatAvailable(new Seat(1, 2))); // false
+
+        Movie movie2 = new Movie("Movie Title2");
+        cinema.addMovie(movie2);
+
+        Session session2 = new Session(hall1, movie2, "Tomorrow");
+        System.out.println(session2.isSeatAvailable(new Seat(1, 2))); // true
     }
 }

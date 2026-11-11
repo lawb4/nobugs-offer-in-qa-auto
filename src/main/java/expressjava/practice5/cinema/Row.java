@@ -25,7 +25,9 @@ public class Row {
         if (seat.getRowNumber() == rowNumber) {
             seats.add(seat);
         } else {
-            throw new IllegalArgumentException("rowNumber mismatch");
+            throw new IllegalArgumentException(
+                    "Seat row " + seat.getRowNumber() +
+                            " doesn't match Row " + rowNumber);
         }
     }
 }

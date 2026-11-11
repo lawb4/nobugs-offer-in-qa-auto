@@ -19,6 +19,10 @@ public class Booking {
         //WallDiscountBased strategy
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public List<Seat> getSeats() {
         return seats;
     }
