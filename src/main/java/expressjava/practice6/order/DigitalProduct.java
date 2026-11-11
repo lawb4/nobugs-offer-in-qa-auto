@@ -1,4 +1,4 @@
-package expressjava.practice5.order;
+package expressjava.practice6.order;
 
 public class DigitalProduct extends Product {
     private int fileSize;

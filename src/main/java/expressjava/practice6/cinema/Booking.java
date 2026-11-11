@@ -1,4 +1,4 @@
-package expressjava.practice5.cinema;
+package expressjava.practice6.cinema;
 
 import java.util.List;
 

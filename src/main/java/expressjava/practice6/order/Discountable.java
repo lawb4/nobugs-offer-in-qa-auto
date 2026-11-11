@@ -1,4 +1,4 @@
-package expressjava.practice5.order;
+package expressjava.practice6.order;
 
 public interface Discountable {
     /**
