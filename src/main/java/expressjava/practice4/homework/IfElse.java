@@ -68,13 +68,7 @@ public class IfElse {
         System.out.print("Enter number: ");
         int n = Integer.parseInt(sc.nextLine());
 
-        boolean isEven;
-        if (n % 2 == 0) {
-            isEven = true;
-        } else {
-            isEven = false;
-        }
-        return isEven;
+        return n % 2 == 0;
     }
 
     public static int getDiscountByAge() {

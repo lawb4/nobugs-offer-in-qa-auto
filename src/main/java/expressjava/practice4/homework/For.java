@@ -7,7 +7,7 @@ public class For {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        printNumbersFromOneToHundredExceptDivisibleByThree();
+        printNumbersFromOneToHundredDivisibleByThree();
         System.out.println();
         System.out.println(getSumOfNumbersFromOneToN());
         printTimesTable();
@@ -15,7 +15,7 @@ public class For {
         printNumbersFromOneToTen();
     }
 
-    public static void printNumbersFromOneToHundredExceptDivisibleByThree() {
+    public static void printNumbersFromOneToHundredDivisibleByThree() {
 
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0) {
@@ -48,8 +48,12 @@ public class For {
         System.out.print("Enter num: ");
         int n = Integer.parseInt(sc.nextLine());
 
+        if (n < 2) {
+            return false;
+        }
+
         boolean isPrime = true;
-        for (int i = 2; i <= n - 1; i++) {
+        for (int i = 2; i < n; i++) {
             if (n % i == 0) {
                 isPrime = false;
                 break;

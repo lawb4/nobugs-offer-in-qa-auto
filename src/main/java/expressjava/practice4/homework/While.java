@@ -7,7 +7,12 @@ public class While {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println(getFactorial());
+
+        try {
+            System.out.println(getFactorial());
+        } catch (IllegalArgumentException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
         printEvenNumbersTillBoundary();
         System.out.println();
         printReverseCount();
@@ -18,7 +23,7 @@ public class While {
         int n = Integer.parseInt(sc.nextLine());
 
         if (n < 0) {
-            return -1; // indicator that factorial is not defined for negative numbers
+            throw new IllegalArgumentException("Factorial is not defined for negative numbers");
         }
 
         int result = 1;
@@ -35,7 +40,7 @@ public class While {
         int n = Integer.parseInt(sc.nextLine());
 
         int i = 1;
-        while (i < n) {
+        while (i <= n) {
             if (i % 2 == 0) {
                 System.out.printf("%d ", i);
             }
