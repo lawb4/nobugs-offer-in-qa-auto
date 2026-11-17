@@ -1,7 +1,7 @@
 package expressjava.practice6.homework.task5farm;
 
 public abstract class DomesticAnimal {
-    private String need;
+    private final String need;
 
     protected DomesticAnimal(String need) {
         this.need = need;

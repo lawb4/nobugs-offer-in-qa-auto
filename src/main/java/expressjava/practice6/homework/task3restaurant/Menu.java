@@ -1,11 +1,11 @@
-package expressjava.practice6.homework.task3restarurant;
+package expressjava.practice6.homework.task3restaurant;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class Menu {
-    private List<Dish> dishes = new ArrayList<>();
+    private final List<Dish> dishes = new ArrayList<>();
 
     public void addDish(Dish dish) {
         dishes.add(Objects.requireNonNull(dish));
